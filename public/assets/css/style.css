@@ -1,0 +1,154 @@
+
+
+h1 {
+  color: #333;
+}
+
+.text-big {
+  font-size: 25px;
+  font-weight: 650;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-color{
+  background-color:  #ff9500;
+}
+
+.card-upload {
+  width: 75%;
+  border-radius: 15px;
+  margin-bottom: 100px;
+}
+
+.fz-12 {
+  font-size: 12px;
+}
+
+.img-about {
+  margin-top: -100px;
+}
+
+.mt-10 {
+  margin-top: 100px;
+}
+
+.bg-primary {
+  background-color: #252e64 !important;
+}
+
+.bg-secondary {
+  background-color: #252e64 !important;
+}
+
+.icon-footer{
+  width: 20px;
+  height: 20px;
+ }
+ 
+ .badge-footer{
+ width: fit-content;
+ height: 30px;
+ }
+
+.text-small {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.card-product {
+  border-radius: 25px;
+}
+
+.container-custom {
+  padding: 0px 250px;
+}
+
+.card-login {
+  width: 800px;
+  border-radius: 15px;
+}
+
+.input-file{
+  visibility: hidden;
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
+ /* Sarang freelance, list project */
+
+.text-primary{
+  color: #252e64 !important;
+}
+
+.btn-primary{
+  background-color: #252e64 !important;
+}
+
+.fst-normal{
+  font-size: small;
+}
+
+.mb-10{
+  margin-bottom: -5px;
+}
+
+.text-judul{
+  font-weight: 100;
+}
+
+.card-title{
+  height: 200px;
+}
+
+.text-product{
+  font-size: small;
+}
+
+.navigasi{
+  margin-right: 10%;
+}
+
+.border-between{
+  border-right: 1px solid rgb(177, 175, 175);
+}
+
+.border-bebas{
+  border-top: none;
+}
+
+/* Media Queries */
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .responsive-img {
+    max-width: 90%;
+  }
+}
+
+/* Mobile */
+@media (min-width: 300px) and (max-width: 767px) {
+  .responsive-img {
+    max-width: 100%;
+  }
+  .container-custom{
+    padding: 0px 0px;
+  }
+  .card-upload{
+    width: 100% !important;
+  }
+  .border-between{
+    border-right: none;
+    border-bottom: 1px solid rgb(177, 175, 175);
+  }
+  .border-bebas{
+    border-top: 1px solid rgb(177, 175, 175);
+  }
+}
+
+

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../../partials/head") %>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <body>
+
+      <!-- Header -->
+   <%- include("../../partials/header") %>
+
+    <!-- Main -->
+    <main>
+      <div class="container mb-5">
+      </div>
+      <div class="container">
+
+        <div class="d-flex justify-content-center">
+          <div class="card shadow border-0 mx-auto card-upload">
+            <div class="card-body fw-bold">
+                <h5>CEK TURNITIN NO-REPOSITORY</h5>
+                    <div class="container py-5">
+                <div class="container">
+                    <div class="row mt-1">
+                            <div class="card shadow border-0 p-3 mb-1 bg-body-tertiary rounded">
+                                <div class="card-body" id="dropArea">
+                                  <input 
+                                  type="file"
+                                  class="input-file"
+                                  name="file"
+                                  id="fileInput"/>
+                                  <div class="d-flex justify-content-end m-1">
+                                    <button class="btn btn-primary mx-1">
+                                      Unggah File
+                                    </button>
+                                    <button class="btn btn-danger mx-1">
+                                      Hapus Semua
+                                    </button>
+                                  </div>
+                                  <div id="fileList"></div>
+                                    <div class="container mb-5 mt-5 text-center text-secondary fw-bold" id="title-product">
+                                        <h4>Cek Turnitin No-Repository</h4>
+                                        <span id="product-desc">TARIK FILE MU KESINI / KLIK AJA DISINI</span><br>
+                                          <p>.docx .pdf aja ya</p>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container mb-5 px-5 fw-semibold">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-xl-6 border-between pb-3 pb-xl-0">
+                  <span>1. Filter pilihh aja sesuaii kebutuhan yaa</span>
+                  <div class="form-check fw-normal text-secondary">
+                    <input
+                      class="form-check-input"
+                      name="Kutipan"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Kecualikan Kutipan
+                    </label>
+                  </div>
+                  <div class="form-check fw-normal text-secondary">
+                    <input
+                      class="form-check-input"
+                      name="daftarpustaka"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Kecualikan Daftar Pustaka
+                    </label>
+                  </div>
+                  <div class="form-check fw-normal text-secondary">
+                    <input
+                      class="form-check-input"
+                      name="sumber"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Kecualikan sumber yang kurang dari ...
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12 col-xl-6 px-0 px-xl-5 pt-xl-0 pt-3">
+                  <span>2. Isi Nomer Whatsapp kamu buat ngirim hasilnya</span>
+                  <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                      <div class="fz-13 fw-600"></div>
+                      <img
+                        src="https://www.tanjunglesung.com/wp-content/uploads/2018/12/logo-wa-whatsapp-300x300.png"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      />
+                    </div>
+                    <div class="col-auto">
+                      <input
+                        type="password"
+                        id="inputPassword6"
+                        class="form-control"
+                        aria-describedby="passwordHelpInline"
+                        placeholder="62xxxxx"
+                        name="Whatsapp"
+                      />
+                    </div>
+                    <div class="col-auto"></div>
+                  </div>
+                  <div class="form-check mb-2 text-dark">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                      checked
+                    />
+                    <label class="form-check-label text-small" for="flexCheckChecked">
+                      Mau dapet info promo / update Turned In ga?
+                    </label>
+                  </div>
+                  <div class="form-check fw-bold">
+                    <span>Jumlah: 0</span>
+                  </div>
+                  <label for="exampleDataList" class="form-label text-dark text-small"
+                    >Referral Code (Opsional)</label
+                  >
+                  <input
+                    class="form-control"
+                    list="datalistOptions"
+                    id="exampleDataList"
+                    name="code"
+                  />
+                  <datalist id="datalistOptions">
+                    <option value="San Francisco"></option>
+                    <option value="New York"></option>
+                    <option value="Seattle"></option>
+                    <option value="Los Angeles"></option>
+                    <option value="Chicago"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center mt-5">
+                <button type="button" class="btn btn-danger" onclick="cekTurnitin()">Submit</button>
+              </div>
+            </div>
+          </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="w-100 bg-primary mt-5 mb-5">
+                <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-4">
+                        <img src="/assets/img/5.png" alt="" 
+                        class="img-fluid img-about"/>
+                      </div>
+                      <div class="col-12 col-xl-6 mt-5 mb-3 py-4">
+                        <div class="text-center fw-bold text-light">
+                            <span class="text-big">Cek Plagiasi Turnitin itu apa sih?</span>
+                            <p class="fw-normal text-start mt-3">Turned In adalah layanan cek plagiasi otomatis yang terintegrasi langsung dengan Turnitin sehingga bisa mendeteksi tingkat plagiasi pada dokumen kamu!</p>
+                          </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-10">
+              <div class="text-center">
+                  <h4 class="fw-semibold mb-2">Biar apa pake Turnedin??</h4>
+                  <h6 class="fz-14 fw-semi text-warning">Biar apa pake Turnedin??</h6>
+              </div>
+          </div>
+          <div class="container mt-5">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-xl-4 mb-3 border-between">
+                      <div class="row">
+                          <div class="col-4">
+                      <img src="/assets/img/1714118487566.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="col-8">
+                              <span class="m-0 fz-12 fw-bold">kami gak libur demi kamu</span>
+                              <p class="m-0 fz-12">Layanan Turned In buka 24 jam , kami siap layani kamu kapanpun dimanapun</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-xl-4 mb-3 border-between">
+                      <div class="row">
+                          <div class="col-4">
+                      <img src="https://turnedin.id/img/logo/1714118487567.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="col-8">
+                              <span class="m-0 fz-12 fw-bold">Cepet ? Jelas udah otomatis ko</span>
+                              <p class="m-0 fz-12">Turned In gak bakal ketiduran kok :( udah full otomatis semuanyaaa</div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-xl-4 mb-3">
+                      <div class="row">
+                          <div class="col-4">
+                      <img src="https://turnedin.id/img/logo/1714118487567.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="col-8">
+                              <span class="m-0 fz-12 fw-bold">Kalo ada tanya tanya susah dong?</span>
+                              <p class="m-0 fz-12">Gak ygy , ada mimin yang siap jawab pertanyaan mu kok hehe !!</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+            <!-- Footer -->
+            <%- include("../../partials/footer") %>
+             <script src="/assets/js/upload.js"></script>
+             <script src="/assets/js/cek-turnitin.js"></script>
+             </body>
+             </html>
