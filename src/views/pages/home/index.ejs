@@ -71,7 +71,26 @@
     <!-- Product section -->
     <div class="container">
       <div class="mx-0 px-0 mx-xl-5 px-xl-5">
-      <div class="row mt-5" id="product-area"> 
+      <div class="row mt-5" id="product-area">
+        <% products.map((item , index) => { %>
+          <div class="col-12 col-xl-6 mb-3">
+            <div class="card card-product bg-secondary text-light">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="<%= item.foto %>" alt="" 
+                    class="img-fluid"/>
+                  </div>
+                  <div class="col-8 mt-3">
+                      <h6 class="fw-bold"><%= item.judul %></h6>
+                     <span class="fw-semi text-product"><%= item.isi %></span> <br>
+                      <a href="<%= item.link %>" class="btn btn-primary mt-4">Klik Disini</a>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% }) %>
       </div>
       </div>
     </div>
@@ -97,6 +116,25 @@
             <h4 class="fw-semi mb-5">Kata mereka</h4>
         </div>
         <div class="row" id="testi-area">
+          <% testi.map((item , index) => { %>
+            <div class="col-12 col-xl-4 mb-3">
+              <div class="card shadow card-title">
+                  <div class="card-body">
+                      <div class="row">
+                          <div class="col-2">
+                              <img src="<%= item.foto %>" class="img-fluid rounded-circle">
+                          </div>
+                          <div class="col-10">
+                              <p class="m-0"><%= item.nama %></p>
+                              <p class="m-0"><%= item.univ %></p>
+                          </div>
+                          </div>
+                          <hr>
+                          <p><%= item.isi %></p>
+                  </div>
+              </div>
+          </div>
+            <% }) %>
         </div>
     </div>
     <div class="container mt-10">
