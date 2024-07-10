@@ -1,6 +1,6 @@
 import {home} from "../controllers/pages.js"
 import { cekTurnitin, ParafraseIn, sarangFreelance, translateIn } from "../controllers/services.js";
-import { affiliate, myProject, profile, withDraw } from "../controllers/user.js";
+import { affiliate, myProject, myProject2, profile, withDraw } from "../controllers/user.js";
 
 export const route = function (app) {
     app.get("/", home);
@@ -12,4 +12,5 @@ export const route = function (app) {
     app.get("/affiliate", affiliate);
     app.get("/myproject", myProject);
     app.get("/withdraw", withDraw);
+    app.get("/myproject2", myProject2);
 }

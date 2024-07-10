@@ -4,8 +4,53 @@
   <link rel="stylesheet" href="/assets/css/style.css">
   <body>
     
-    <!-- Header -->
-    <%- include("../../partials/header") %>
+<!-- Header -->
+<%- include("../../partials/header") %>
 
+<!-- Main -->
+<main>
+  <div class="container">
+      <div class="row justify-content-center mt-5">
+
+        <%- include("../../partials/sidebar") %>
+
+          <!-- Withdraw saldo -->
+          <div class="col-xl-8 col-12">
+              <div class="card shadow mb-3 bg-body-light rounded border-0">
+                  <div class="card-body">
+                      <div class="d-flex mt-3">
+                          <div class="p-2 flex-fill fw-semibold fs-5">Withdraw Saldo</div>
+                          <div class="p-2 flex-fill text-center">
+                          <span class="fw-normal fz-15">Jumlah Saldo :</span><br>
+                          <span class="fw-bold fz-15 ms-5">Rp. 0</span>
+                          </div>
+                          <div class="p-2 flex-fill text-end">
+                          <span class="fw-normal fz-15">Jumlah Saldo yang bisa ditarik:</span><br>
+                          <span class="fw-bold fz-15 ms-5">Rp. 0</span>
+                           </div>
+                        </div>
+                        <form class="row g-3 mt-3 fz-15 fw-normal">
+                          <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label">Jumlah Penarikan</label>
+                              <input type="nama" class="form-control rounded fz-15" placeholder="Contoh: 1250000">
+                          </div>
+                          <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">Metode Penarikan</label>
+                              <input type="password" class="form-control rounded fz-15" placeholder="Contoh: BNI">
+                          </div>
+                          <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label">Nomor Akun/Rekening</label>
+                              <input type="email" class="form-control rounded fz-15" id="inputEmail4"
+                                  placeholder="Contoh: 123">
+                          </div>
+                          <div class="col-12 mb-3">
+                              <button type="submit" class="btn bg-primary text-light rounded-pill fz-15 mt-3">
+                                  Ajukan tarik dana</button>
+                          </div>
+                      </form>
+                      </div>
+                  </div>
+</main>
+<!-- End main -->
   </body>
   </html>

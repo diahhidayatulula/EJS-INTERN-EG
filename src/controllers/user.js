@@ -13,3 +13,7 @@ export const myProject = (req, res) => {
 export const withDraw = (req, res) => {
     res.render("pages/user/withdraw.ejs");
 };
+
+export const myProject2 = (req, res) => {
+    res.render("pages/user/myproject2.ejs");
+};

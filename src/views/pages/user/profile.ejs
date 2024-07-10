@@ -8,27 +8,14 @@
 <%- include("../../partials/header") %>
 
 <!-- Main -->
+ <main>
 <div class="container">
   <div class="row justify-content-center mt-5">
-    <div class="col-3">
-      <div class="card shadow border-0 p-3 mb-3 bg-body-light rounded">
-        <h5 class="mb-0">Profile</h5>
-        <span class="fz-12">Detail tentang profil</span>
-      </div>
-      <div class="card shadow border-0 p-3 mb-3 bg-body-light rounded">
-        <h5 class="mb-0">Affliate</h5>
-        <span class="fz-12">Detail tentang informasi affiliate</span>
-      </div>
-      <div class="card shadow border-0 p-3 mb-3 bg-body-light rounded">
-        <h5 class="mb-0">Withdraw</h5>
-        <span class="fz-12">Detail tentang informasi withdraw</span>
-      </div>
-      <div class="card shadow border-0 p-3 mb-3 bg-body-light rounded">
-        <h5 class="mb-0">My Project</h5>
-        <span class="fz-12">Detail tentang informasi withdraw</span>
-      </div>
-    </div>
-    <div class="col-8">
+    
+    <%- include("../../partials/sidebar") %>
+
+    <!-- Profile -->
+    <div class="col-xl-8 col-12">
       <div class="card shadow mb-3 bg-body-light rounded border-0">
         <div class="mx-auto card-body">
             <div class="p-0 mt-2 mb-2">
@@ -56,6 +43,9 @@
     </div>
   </div>
 </div>
+<!-- End Profile -->
+
+<!-- Form -->
 <div class="card shadow mb-5 bg-body-light rounded border-0">
   <div class="mx-auto card-body px-4">
       <div class="p-0 mt-2">
@@ -96,6 +86,8 @@
 </div>
 </div>
 </div>
-
+</div>
+</main>
+<!-- End Main -->
   </body>
   </html>
